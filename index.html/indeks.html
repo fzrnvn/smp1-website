@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website SMP Anda</title>
+    <!-- Memuat Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Memuat Font Inter dari Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Menautkan file CSS eksternal (akan dibuat di blok selanjutnya) -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Mengatur font default untuk seluruh halaman */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* CSS untuk menyembunyikan konten tab */
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Header Section -->
+    <header class="bg-blue-700 text-white p-4 shadow-lg rounded-b-lg">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-3xl font-bold mb-2 md:mb-0">SMP Harapan Bangsa</h1>
+            <p class="text-lg">Jl. Pendidikan No. 10, Kota Contoh, Indonesia</p>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-600 shadow-md rounded-lg mx-4 md:mx-auto mt-4 max-w-6xl">
+        <ul class="flex flex-wrap justify-center p-2">
+            <li><a href="#" class="nav-item active" data-target="beranda">Beranda</a></li>
+            <li><a href="#" class="nav-item" data-target="profil">Profil</a></li>
+            <li><a href="#" class="nav-item" data-target="guru">Guru</a></li>
+            <li><a href="#" class="nav-item" data-target="siswa">Siswa</a></li>
+            <li><a href="#" class="nav-item" data-target="informasi">Informasi</a></li>
+            <li><a href="#" class="nav-item" data-target="kontak">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="container mx-auto p-4 mt-6 bg-white shadow-lg rounded-lg">
+        <!-- Beranda Content -->
+        <section id="beranda" class="tab-content active p-6">
+            <h2 class="text-2xl font-semibold mb-4 text-blue-700">Selamat Datang di Website SMP Harapan Bangsa!</h2>
+            <p class="mb-4">Kami berkomitmen untuk menyediakan pendidikan terbaik bagi siswa-siswi kami. Jelajahi website kami untuk mengetahui lebih banyak tentang sekolah, program, dan kegiatan kami.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-blue-50 p-4 rounded-lg shadow-md">
+                    <h3 class="font-bold text-xl mb-2 text-blue-600">Visi Kami</h3>
+                    <p>Mencetak generasi penerus bangsa yang cerdas, berkarakter, dan berdaya saing global.</p>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-lg shadow-md">
+                    <h3 class="font-bold text-xl mb-2 text-blue-600">Misi Kami</h3>
+                    <p>Menyelenggarakan pendidikan berkualitas dengan fasilitas modern dan pengajar profesional.</p>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-lg shadow-md">
+                    <h3 class="font-bold text-xl mb-2 text-blue-600">Berita Terbaru</h3>
+                    <p>Pendaftaran siswa baru tahun ajaran 2025/2026 telah dibuka! Segera daftarkan diri Anda.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Profil Content -->
+        <section id="profil" class="tab-content p-6">
+            <h2 class="text-2xl font-semibold mb-4 text-blue-700">Profil Sekolah</h2>
+            <p class="mb-4">SMP Harapan Bangsa didirikan pada tahun 1990 dengan tujuan untuk memberikan pendidikan berkualitas tinggi kepada masyarakat. Kami memiliki sejarah panjang dalam menghasilkan lulusan yang berprestasi di berbagai bidang.</p>
+            <h3 class="text-xl font-semibold mb-2 text-blue-600">Fasilitas</h3>
+            <ul class="list-disc list-inside mb-4">
+                <li>Ruang kelas yang nyaman dan ber-AC</li>
+                <li>Laboratorium IPA dan Komputer</li>
+                <li>Perpustakaan lengkap</li>
+                <li>Lapangan olahraga (basket, voli, futsal)</li>
+                <li>Kantin sehat</li>
+            </ul>
+            <h3 class="text-xl font-semibold mb-2 text-blue-600">Akreditasi</h3>
+            <p>Sekolah kami telah terakreditasi "A" oleh Badan Akreditasi Nasional Sekolah/Madrasah (BAN-S/M).</p>
+        </section>
+
+        <!-- Guru Content -->
+        <section id="guru" class="tab-content p-6">
+            <h2 class="text-2xl font-semibold mb-4 text-blue-700">Daftar Guru Pengajar</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-blue-50 p-4 rounded-lg shadow-md flex items-center">
+                    <img src="https://placehold.co/60x60/ADD8E6/000000?text=GP1" alt="Foto Guru 1" class="w-16 h-16 rounded-full mr-4 object-cover">
+                    <div>
+                        <h3 class="font-bold text-xl text-blue-600">Bapak Budi Santoso</h3>
+                        <p class="text-gray-600">Mata Pelajaran: Matematika</p>
+                    </div>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-lg shadow-md flex items-center">
+                    <img src="https://placehold.co/60x60/ADD8E6/000000?text=GP2" alt="Foto Guru 2" class="w-16 h-16 rounded-full mr-4 object-cover">
+                    <div>
+                        <h3 class="font-bold text-xl text-blue-600">Ibu Siti Aminah</h3>
+                        <p class="text-gray-600">Mata Pelajaran: Bahasa Indonesia</p>
+                    </div>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-lg shadow-md flex items-center">
+                    <img src="https://placehold.co/60x60/ADD8E6/000000?text=GP3" alt="Foto Guru 3" class="w-16 h-16 rounded-full mr-4 object-cover">
+                    <div>
+                        <h3 class="font-bold text-xl text-blue-600">Bapak Joko Susilo</h3>
+                        <p class="text-gray-600">Mata Pelajaran: Ilmu Pengetahuan Alam</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Siswa Content -->
+        <section id="siswa" class="tab-content p-6">
+            <h2 class="text-2xl font-semibold mb-4 text-blue-700">Daftar Siswa Berprestasi</h2>
+            <p class="mb-4">Berikut adalah beberapa siswa kami yang telah menunjukkan prestasi luar biasa dalam berbagai bidang.</p>
+            <ul class="list-disc list-inside">
+                <li>Andi Pratama - Juara 1 Olimpiade Matematika Tingkat Kabupaten</li>
+                <li>Dewi Lestari - Juara 2 Lomba Pidato Bahasa Inggris</li>
+                <li>Rizky Maulana - Atlet Bulutangkis Berbakat</li>
+            </ul>
+        </section>
+
+        <!-- Informasi Content -->
+        <section id="informasi" class="tab-content p-6">
+            <h2 class="text-2xl font-semibold mb-4 text-blue-700">Informasi Penting</h2>
+            <ul class="list-disc list-inside mb-4">
+                <li>Jadwal Ujian Semester Genap: 15 - 20 Juli 2025</li>
+                <li>Pengumuman Libur Hari Raya Idul Adha: 17 Juni 2025</li>
+                <li>Kegiatan Ekstrakurikuler akan dimulai pada minggu pertama Agustus.</li>
+            </ul>
+            <p>Untuk informasi lebih lanjut, silakan hubungi bagian administrasi sekolah.</p>
+        </section>
+
+        <!-- Kontak Content -->
+        <section id="kontak" class="tab-content p-6">
+            <h2 class="text-2xl font-semibold mb-4 text-blue-700">Hubungi Kami</h2>
+            <p class="mb-2"><span class="font-semibold">Alamat:</span> Jl. Pendidikan No. 10, Kota Contoh, 12345</p>
+            <p class="mb-2"><span class="font-semibold">Telepon:</span> (021) 12345678</p>
+            <p class="mb-2"><span class="font-semibold">Email:</span> info@smpharapanbangsa.sch.id</p>
+            <div class="mt-4">
+                <h3 class="text-xl font-semibold mb-2 text-blue-600">Lokasi Kami</h3>
+                <!-- Placeholder untuk peta (Anda bisa menyematkan Google Maps di sini) -->
+                <div class="bg-gray-200 h-64 w-full rounded-lg flex items-center justify-center text-gray-500">
+                    
+                    <p>Peta Lokasi Sekolah</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-blue-700 text-white p-4 mt-6 shadow-inner rounded-t-lg">
+        <div class="container mx-auto text-center">
+            <p class="mb-2">SMP Harapan Bangsa</p>
+            <p class="mb-2">Jl. Pendidikan No. 10, Kota Contoh, Indonesia</p>
+            <p class="mb-2">Telepon: (021) 12345678 | Email: info@smpharapanbangsa.sch.id</p>
+            <p>&copy; 2025 SMP Harapan Bangsa. Hak Cipta Dilindungi Undang-Undang.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navItems = document.querySelectorAll('.nav-item');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            navItems.forEach(item => {
+                item.addEventListener('click', (e) => {
+                    e.preventDefault(); // Mencegah link berpindah halaman
+
+                    // Hapus kelas 'active' dari semua nav item dan tab content
+                    navItems.forEach(nav => nav.classList.remove('active'));
+                    tabContents.forEach(content => content.classList.remove('active'));
+
+                    // Tambahkan kelas 'active' ke nav item yang diklik
+                    e.target.classList.add('active');
+
+                    // Tampilkan konten yang sesuai
+                    const targetId = e.target.dataset.target;
+                    document.getElementById(targetId).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>

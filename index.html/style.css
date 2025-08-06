@@ -1,0 +1,69 @@
+/* style.css */
+
+/* Styling untuk item navigasi */
+.nav-item {
+    display: block;
+    padding: 0.75rem 1.25rem; /* Padding yang lebih besar */
+    margin: 0.25rem; /* Margin antar item */
+    color: white;
+    font-weight: 600; /* Semi-bold */
+    text-decoration: none;
+    border-radius: 0.5rem; /* Sudut membulat */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transisi halus */
+}
+
+.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Sedikit transparan saat hover */
+    transform: translateY(-2px); /* Efek sedikit naik saat hover */
+}
+
+.nav-item.active {
+    background-color: #1E40AF; /* Warna biru gelap untuk item aktif */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan untuk item aktif */
+    transform: translateY(0); /* Pastikan tidak ada efek naik */
+}
+
+/* Styling untuk bagian konten */
+.tab-content {
+    background-color: #ffffff;
+    border-radius: 0.75rem; /* Sudut membulat yang lebih besar */
+    padding: 1.5rem; /* Padding yang lebih besar */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Bayangan yang lebih menonjol */
+    animation: fadeIn 0.5s ease-in-out; /* Animasi fade-in */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Penyesuaian untuk tampilan mobile */
+@media (max-width: 768px) {
+    .nav-item {
+        width: calc(50% - 0.5rem); /* Dua kolom di mobile */
+        text-align: center;
+    }
+    .container {
+        padding: 0 1rem; /* Padding lebih kecil di mobile */
+    }
+}
+
+/* Tambahan styling untuk elemen umum */
+h1, h2, h3 {
+    color: #1D4ED8; /* Warna biru untuk judul */
+}
+
+p {
+    line-height: 1.6; /* Ketinggian baris untuk keterbacaan */
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 1.25rem;
+}
